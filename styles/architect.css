@@ -1,0 +1,6 @@
+/* Work Sans From Bunny Fonts */
+@import url(https://fonts.bunny.net/css?family=work-sans:400,500,600,700,800);
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
