@@ -1,8 +1,11 @@
 /* Work Sans From Bunny Fonts */
 @import url(https://fonts.bunny.net/css?family=work-sans:400,500,600,700,800);
-
+/* shared */
 *{
     font-family: 'Work Sans', sans-serif;
+}
+.text-light-gray{
+    color: #727272;
 }
 /* Header Styles */
 header{
@@ -41,9 +44,6 @@ nav li a{
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: #727272;
-}
 .banner img{
     margin-top: 20px;
     width: 100%;
@@ -56,25 +56,6 @@ nav li a{
     font-size: 1.25rem;
     cursor: pointer;
     border: 0;
-}
-/* responsive media queries */
-/* mobile */
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* tablet */
-@media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
 }
 /* main styles */
 main{
@@ -98,11 +79,33 @@ main{
 .teams-title{
     font-size: 2.8rem;
 }
-.quick-list{
-    color: #727272;
-    font-weight: 500;
-}
 .text-features{
     color: #ff900e;
     font-weight: 700;
+}
+/* responsive media queries */
+/* mobile */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav, .teams-img-container{
+        flex-direction: column;
+    }
 }
